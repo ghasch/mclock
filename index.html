@@ -1,0 +1,67 @@
+<!-- zadanie 12 ver2 - stoper -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Motivation Clock :)</title>
+    <link rel="stylesheet" href="user.css">
+
+</head>
+
+<body>
+    <div class="wrap">
+    <div class="info">
+
+        <h3>Hello, friend...</h3>
+
+        <p>podaj ile zarabiasz miesięcznie netto:</p>
+
+        <input type="number" class="payment">
+        <p>zarabiasz zatem:</p>
+
+        <table>
+            <tr>
+                <td><span class="day">0</span> PLN dziennie </td>
+            </tr>
+            <tr>
+                <td><span class="hour">0</span> PLN na godzinę </td>
+            </tr>
+            <tr>
+                <td><span class="minute">0</span> PLN na minutę </td>
+            </tr>
+            <tr>
+                <td><span class="sec">0</span> PLN na sekundę </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="stopwatch">
+      
+        <div class="time">
+            <p><strong>Czas w pracy:</strong></p>
+            <div><span class="hour">0</span>h - <span class="minute">0</span>m - <span class="sec">0</span>s</div>
+            
+        </div>
+
+        <div class="cash">
+            <p><strong>Piniądz:</strong></p>
+       <span>---</span>
+            
+        </div>
+
+        <div class="buttons">
+              <button class="main">Start</button>
+              <button class="reset">Reset</button>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="user.js"></script>
+</body>
+
+</html>

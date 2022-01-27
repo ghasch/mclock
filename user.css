@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    background: #fcfcfc;
+}
+
+.wrap {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+.info,
+.stopwatch {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+
+}
+
+.info table {
+    margin: auto;
+}
+
+.time,
+.cash {
+    position: relative;
+    z-index: 2;
+    font-size: 19px;
+}
+
+
+.time span .cash span {
+    font-size: 24px;
+    letter-spacing: 1px
+}
+
+table {
+    background: #fff;
+}
+
+table td {
+    border: 1px solid #333;
+    padding: 4px 8px;
+    background: #fff;
+    margin-bottom: 5px;
+    display: block;
+
+}
+
+table td span {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.payment {
+    height: 32px;
+    padding: 0 10px;
+    background: #fff;
+}
+
+.stopwatch {
+    background: #fff;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 10px solid #ddd;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.stopwatch:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 6px);
+    width: 6px;
+    height: 40%;
+    background: #eee;
+    transform-origin: bottom;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.stopwatch.play:before {
+    animation: animate 1s linear infinite;
+ animation-play-state: running;
+}
+
+.stopwatch.pause:before {
+    animation: animate 1s linear infinite;
+        animation-play-state: paused;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.buttons {
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+button {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0 5px;
+    background: #ccc;
+    color: #333;
+    padding: 4px 8px;
+    display: inline-block;
+    border: 0 !important;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #333;
+    color: #ccc;
+}
+
+
+@media (max-width: 767px) {}
